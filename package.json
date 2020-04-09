@@ -4,7 +4,7 @@
   "description": "Project While Learning",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "YelpCampProject"
