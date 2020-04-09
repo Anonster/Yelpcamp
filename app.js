@@ -16,8 +16,9 @@ var campgroundRoute = require("./routes/campground"),
   commentRoute = require("./routes/comment"),
   authRoute = require("./routes/index");
 //database connection with mongoose
+var url = process.env.DATABASEURL || "mongodb://localhost/yelpcamp";
 mongoose
-  .connect("mongodb://localhost/yelpcamp", {
+  .connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -55,8 +56,8 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 app.use(function (req, res, next) {
   res.locals.currentUser = req.user;
-  res.locals.error = req.flash('error');
-  res.locals.success = req.flash('success');
+  res.locals.error = req.flash("error");
+  res.locals.success = req.flash("success");
   next();
 });
 //////////////////////
