@@ -1,6 +1,7 @@
 #HOW TO START
-    install node and mongoose 
-    then clone this repo
-    and type npm install i
-    and node app.js
-    goo to go
+         1. Install Node and MongoDB
+         2. Clone the Repo
+         3. npm install
+         4. node app.js || npm start
+    
+-[Click To View](https://nameless-inlet-50438.herokuapp.com/)
